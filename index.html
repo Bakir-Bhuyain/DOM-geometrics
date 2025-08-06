@@ -77,22 +77,31 @@
               </div>
             </div>
           </div>
-          <!-- triangle card -->
-          <div class="card bg-base-100 w-96 shadow-sm">
+          <!-- Parallelogram card -->
+          <div class="card bg-base-100 w-96 shadow-xl">
             <figure>
               <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                alt="Shoes"
+                src="./images/parallelogram.png"
+                alt="Parallelogram"
               />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Card Title</h2>
-              <p>
-                A card component has a figure, a body part, and inside body
-                there are title and actions parts
-              </p>
+              <h2 class="card-title">Parallelogram</h2>
+              <p class="text-center text-3xl">Area (A) = b X h</p>
+              <div>
+                <input  class="w-24 text-2x1 p=2 rounded-sm" type="text"
+                 name="" id="paralellogram-base" placeholder="base">
+                <span class="ml-2 mr-4">cm</span>
+
+                <input class="w-24 text-2x1 p=2 rounded-sm" type="text"
+                 name="" id="paralellogram-height" placeholder="height">
+                <span>cm</span>
+              </div>
+              <div>
+                <p>Area: <span id="paralellogramArea"></span>cm<sup>2</sup></p>
+              </div>
               <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+                <button onclick="calculateParalellogramArea()" class="btn btn-primary w-full">Calculate</button>
               </div>
             </div>
           </div>
@@ -124,5 +133,6 @@
     </main>
     <script src="./script/tringle.js"></script>
     <script src="./script/ractangle.js"></script>
+    <script src="./script/paralellogram.js"></script>
   </body>
 </html>
